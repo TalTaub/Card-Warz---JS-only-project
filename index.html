@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../cardWarz/images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="../cardWarz/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardWarz!</title>
+</head>
+<body>
+    
+    <div class = headerArea>
+        <img src="../cardWarz/images/world-war-2827031_1280.png" class="headerImage" alt="cardWarz">
+        <h1 class = "cardWarz" id="cardwarz" onclick="cardApp()">card warz - press to start!</h1>
+        <h1 id="victory" class="cardWarz" style="display: none;"></h1>
+    </div>
+
+    <div class = "mainDiv">
+        <div id="app" class="gameDivCss">
+            <h1 id="score">score!</h1>
+            
+            <div id=player1SecondDeck class="player1SecondDeck">
+                <img src="" alt="" class="cardFaceUp" id="player1SecondCard">
+                <img src="../cardWarz/images/fliped.png" alt="player1SecondDeck" class="cardStock" id="player1SecondDeckFlipped" >
+                
+            </div>
+            
+            <div id=player1Deck class="player1Deck">
+                <img src="" alt="" class="cardFaceUp" id="player1Card">
+                <img src="../cardWarz/images/fliped.png" alt="player1Deck" class="cardStock" id="player1DeckFlipped">   
+            </div>
+            
+            <div id=fightingZone class="fightingZone"> 
+                <img src="..//cardWarz/images/fight.png" alt="" class="cardFaceUp" id="fightingZoneCard">
+                <img src="../cardWarz/images/fliped.png" alt="fightingZone" class="cardStock" id="fightingZoneFlipped" onclick="fight()">
+            </div>
+
+            <div id=player2Deck class="player2Deck">
+                <img src="" alt="" class="cardFaceUp" id="player2Card">
+                <img src="../cardWarz/images/fliped.png" alt="player2Deck" class="cardStock" id="player2DeckFlipped">
+            </div>
+            
+            <div id=player2SecondDeck class="player2SecondDeck">
+                <img src="" alt="" class="cardFaceUp" id="player2SecondCard">
+                <img src="../cardWarz/images/fliped.png" alt="player2SecondDeck" class="cardStock" id="player2SecondDeckFlipped">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../cardWarz/app.js"></script>
+</body>
+</html>
+
